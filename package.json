@@ -1,0 +1,23 @@
+{
+  "name": "barker_midterm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonbarker12/Barker_Midterm.git"
+  },
+  "author": "Brandon Barker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonbarker12/Barker_Midterm/issues"
+  },
+  "homepage": "https://github.com/brandonbarker12/Barker_Midterm#readme",
+  "engines": {
+      "node": "12.x"
+  }
+}
