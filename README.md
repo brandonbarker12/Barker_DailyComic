@@ -3,8 +3,8 @@ Website that gets the Comic of the Day and a random comic using the XKCD api
 
 
 To run:
-1. "npm install express"
-2. "node index.js"
+1.) "npm install express"
+2.) "node index.js"
 
 1. Your page should have a homepage which
 contains the comic of the day.
