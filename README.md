@@ -4,10 +4,6 @@
 
 *[Link to the Heroku Page](https://brandonsdailycomics.herokuapp.com)*
 
-**To run:**
-* "npm install express"
-* "node index.js" 
-
 ## Instructions:
 
 1. Your page should have a homepage which
