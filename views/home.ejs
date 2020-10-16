@@ -8,44 +8,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-
-    <title>Today's Comic of the Day</title>
+    <title>Comic of the Day</title>
   </head>
 
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Today's Comic of the Day</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/random">Random Comic <span class="sr-only">(current)</span></a>
-                    </li>
-            </ul>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Today's Comic of the Day</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="/">Home</a>
+            <a href="/random">Random Comic</a>
         </div>
-    </nav>
-
-    <div class="comicDiv">
-        <%= data.day %>
-        <%= data.month %>
-        <%= data.year %>
-        <p><%= data.title %></p>
-        <p><%= data.alt %></p>
-        <img src="<%= data.img %>" alt="Today's Comic of the Day" >
     </div>
 
-
-
+    <div class="comicDiv">
+        <p id= "one"><%= data.day %>
+        <%= data.month %>
+        <%= data.year %></p>
+        <p id= "two"><%= data.title %></p>
+        <p id= "three"><%= data.alt %></p>
+        <img src="<%= data.img %>" alt="Today's Comic of the Day" >
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+    </script>
   </body>
 </html>
