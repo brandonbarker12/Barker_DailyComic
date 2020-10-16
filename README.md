@@ -29,8 +29,7 @@ should also have some additional styling by using a custom style sheet.
 6. Your page should be hosted in Heroku.
 
 7. The readme of the page should be properly filled 
-out and should include some markdown to make it look nice. 
-(https://guides.github.com/features/mastering-markdown/)
+out and should include some markdown to make it look nice.
 
 8. The final deliverable will be the working project. 
 You will submit the github link with the readme containing the link to your Heroku.
