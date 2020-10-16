@@ -1,5 +1,7 @@
 Website that gets the Comic of the Day and a random comic using the XKCD api
 
+Heroku link: https://brandonsdailycomics.herokuapp.com
+
 To run:
 1.) "npm install express"
 2.) "node index.js"
