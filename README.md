@@ -1,10 +1,12 @@
-Website that gets the Comic of the Day and a random comic using the XKCD api
+**Brandon Barker**
 
-Heroku link: https://brandonsdailycomics.herokuapp.com
+*A website that gets the Comic of the Day and a random comic using the XKCD api*
 
-To run:
-1.) "npm install express"
-2.) "node index.js"
+*Heroku link: https://brandonsdailycomics.herokuapp.com*
+
+**To run:**
+* "npm install express"
+* "node index.js" 
 
 1. Your page should have a homepage which
 contains the comic of the day.
