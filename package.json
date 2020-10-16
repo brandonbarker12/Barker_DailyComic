@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/brandonbarker12/Barker_Midterm#readme",
   "engines": {
-      "node": "12.x"
+    "node": "12.x"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-ejs": "^1.2.3",
+    "node-fetch": "^2.6.1"
   }
 }
